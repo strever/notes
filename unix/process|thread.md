@@ -34,3 +34,8 @@ Linux/Unix系统
 - C程序设计语言
 - PHP语言
 - PHP5权威编程
+
+
+http://www.kegel.com/c10k.html
+
+https://my.oschina.net/xianggao/blog/662803
