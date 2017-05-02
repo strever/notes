@@ -12,8 +12,8 @@ grep -rl 'D:\/pingan\/codes'|xargs sed -i 's/D:\/pingan\/codes/D:\/documents\/ec
 
 ```shell
 
- netstat -aon|findstr ":80"
->tasklist|findstr "4"
-netsh http show servicestate
+$ netstat -aon|findstr ":80"
+$ tasklist|findstr "4"
+$ netsh http show servicestate
 
 ```
