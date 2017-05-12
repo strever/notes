@@ -17,6 +17,9 @@
 
 ---
 
+//最大文件描述符数量
+
+cat /proc/sys/fs/file-max
 
 
 
