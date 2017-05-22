@@ -71,4 +71,6 @@ array(2) {
 ```
 
 
+# opcache apcu apc
 
+opcache和apc都用来缓存opcode，此外apc还提供了一套用户缓存，使用了opcache的php版本使用apcu提供一套用户缓存。opcache+apcu即可以替换apc，而如果项目里之前已经使用了apc，为了兼容，在./configure时需要添加 --enable-apcu-bc
