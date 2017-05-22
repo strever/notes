@@ -29,3 +29,26 @@ ini_set('display_errors', 1);
 销毁会话时，PHP 会调用 destroy 回调函数。
 
 
+# cli sapi
+
+在运行时，不会把工作目录改为脚本的当前目录
+
+CLI SAPI 强制覆盖了 php.ini 中的某些设置
+
+- html_errors false
+- implicit_flush true  在命令行模式下，所有来自 print 和 echo 的输出将被立即写到输出端，而不作任何地缓冲操作
+- max_execution_time 0 无限
+- register_argc_argv true 将总是可以在 CLI SAPI 中访问到 argc（传送给应用程序参数的个数）和 argv（包含有实际参数的数组）。
+
+标配打开三个流
+
+- STDIN
+- STDOUT
+- STDERR
+
+`php -r 'fwrite(STDERR, "stderr\n");'`
+
+无需自己来关闭这些流，PHP 会自动完成这些操作。
+
+
+
