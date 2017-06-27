@@ -39,4 +39,25 @@ redis-server --service-install --service-name redisService3 --port 10003
 redis-server --service-start --service-name redisService3
 
 
+## logs
 
+### backlog
+
+avoid slow clients connections issues
+
+- 相关配置项
+
+  - tcp-backlog
+  
+### log
+
+- 相关配置项
+
+  - loglevel
+  - logfile
+  - syslog-enabled
+  
+  
+repl-backlog-size
+
+当从库与主库失去连接时，数据改变会存进 复制backlog，待主从重新连接时数据同步入从库 这个log文件的size越大，主从可失去连接的时间就能越长
